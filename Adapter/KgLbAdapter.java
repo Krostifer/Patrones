@@ -1,8 +1,8 @@
 public class KgLbAdapter extends EeuuBoxer {
-    private ChileanBoxer kgWeight;
+    private ChileanBoxer chileanBoxer;
 
-    public KgLbAdapter(ChileanBoxer kgWeight) {
-        this.kgWeight = kgWeight;
+    public KgLbAdapter(ChileanBoxer chileanBoxer) {
+        this.chileanBoxer = chileanBoxer;
     }
 
     @Override
@@ -10,7 +10,7 @@ public class KgLbAdapter extends EeuuBoxer {
         double result;
         double equivalencia = 2.2046;
         //Transformar los kg a lb
-        result = kgWeight.getKgWeight() * equivalencia;
+        result = chileanBoxer.getKgWeight() * equivalencia;
         return result;
     }
 }
