@@ -2,8 +2,8 @@ public class WeightChecker {
 
     private double weightLimit;
 
-    public WeightChecker(double weight){
-        this.weightLimit = weight;
+    public WeightChecker(double weightLimit){
+        this.weightLimit = weightLimit;
     }
 
     public double getWeightLimit(){

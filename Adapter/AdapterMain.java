@@ -2,8 +2,8 @@ public class AdapterMain {
     public static void main(String[] args) {
 		
         WeightChecker lightWeightChecker = new WeightChecker(135);
-        EeuuBoxer boxeador1 = new EeuuBoxer(132);
-		ChileanBoxer boxeador2 = new ChileanBoxer(61);
+        EeuuBoxer boxeador1 = new EeuuBoxer("Floyd Mayweather", 132);
+		ChileanBoxer boxeador2 = new ChileanBoxer("Jose Velasquez", 61);
 		
 		System.out.println("----------------------------------------");
 		System.out.println("Ejecucion del Patron Adapter");
