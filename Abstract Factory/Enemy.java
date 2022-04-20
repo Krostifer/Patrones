@@ -1,3 +1,3 @@
-public interface Enemigo{
+public interface Enemy{
     void atacar();
 }
