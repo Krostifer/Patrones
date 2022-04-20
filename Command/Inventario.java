@@ -13,8 +13,13 @@ public class Inventario {
     //Operaciones
     //Retirar productos
     public void retirar(int cantRetirar){
-        this.stock = this.stock - cantRetirar;
-        System.out.println("Se retiraron: " + cantRetirar + " productos de la bodega " + id + ", el nuevo stock es: " + this.stock + " productos.\n");
+        if(this.stock >= cantRetirar){
+            this.stock = this.stock - cantRetirar;
+            System.out.println("Se retiraron: " + cantRetirar + " productos de la bodega " + id + ", el nuevo stock es: " + this.stock + " productos.\n");
+        }
+        else{
+            System.out.println("En la bodega no hay suficientes productos para retirar la cantidad solicitada.\n");
+        }
     }
 
     //Recibir productos
